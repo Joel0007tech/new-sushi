@@ -110,7 +110,9 @@ a {
   .about-us {
     flex-direction: column;
   }
-
+#mobile-view{
+  display: none;
+}
   .about-us__image {
     flex-direction: row;
   }
@@ -170,13 +172,102 @@ a {
   .header__nav {
     background: var(--primary-color);
   }
-
+#mobile-view{
+  display: none;
+}
   .header__menu {
     display: none;
   }
 
   .header__menu-mobile {
     display: flex;
+  }
+  .mobile-heading {
+    position: fixed;
+  }
+  #mobile-view {
+    position: relative;
+    bottom: 45px;
+  }
+  .sidepanel {
+    height: 170px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 110px;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 2px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .sidepanel a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: left;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: black;
+    font-weight: 700;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 15px;
+    justify-content: left;
+    padding-bottom: 10px;
+  }
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    font-size: 45px;
+    margin-left: 50px;
+    font-weight: 500;
+    border: none;
+    justify-content: right;
+  }
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    position: relative;
+    gap: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    bottom: 140px;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 10px;
+    height: 70px;
+    border-width: 5px;
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  .img-nav {
+    position: relative;
+    right: 30px;
+    bottom: 20px;
+  }
+  .openbtn {
+    font-size: 45px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: whitesmoke;
+    position: relative;
+    top: 5px;
+    left: 60px;
   }
 }
 
